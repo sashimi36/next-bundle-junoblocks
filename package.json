@@ -1,0 +1,31 @@
+{
+  "name": "next-bundle-junoblocks",
+  "version": "1.0.0",
+  "description": "Boostrap your Junoblocks development flow",
+  "main": "index.js",
+  "type": "commonjs",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "files": [
+    "index.js",
+    "README.md"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sashimi36/next-bundle-junoblocks.git"
+  },
+  "author": "sashimi36",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/sashimi36/next-bundle-junoblocks/issues"
+  },
+  "homepage": "https://github.com/sashimi36/next-bundle-junoblocks#readme",
+  "dependencies": {
+    "cli-color": "^2.0.2",
+    "next-transpile-modules": "^9.0.0"
+  },
+  "devDependencies": {
+    "prettier": "^2.6.2"
+  }
+}
