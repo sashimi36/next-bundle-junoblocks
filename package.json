@@ -1,6 +1,6 @@
 {
   "name": "next-bundle-junoblocks",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Boostrap your Junoblocks development flow",
   "main": "index.js",
   "type": "commonjs",
@@ -22,8 +22,7 @@
   },
   "homepage": "https://github.com/sashimi36/next-bundle-junoblocks#readme",
   "dependencies": {
-    "cli-color": "^2.0.2",
-    "next-transpile-modules": "^9.0.0"
+    "cli-color": "^2.0.2"
   },
   "devDependencies": {
     "prettier": "^2.6.2"
