@@ -2,10 +2,6 @@ const fs = require('fs')
 const path = require('path')
 const clc = require('cli-color')
 
-const withTM = require('next-transpile-modules')(['junoblocks'], {
-  resolveSymlinks: false,
-})
-
 function withBundleJunoblocksInitializer(nextConfig = {}) {
   return Object.assign({}, nextConfig, {
     webpack(config, options) {
@@ -45,7 +41,7 @@ function withBundleJunoblocksInitializer(nextConfig = {}) {
 
 module.exports = (config) => {
   if (process.env.NODE_ENV === 'development') {
-    return withTM(withBundleJunoblocksInitializer(config))
+    return withBundleJunoblocksInitializer(config)
   }
 
   return config
