@@ -13,18 +13,14 @@ function withBundleJunoblocksInitializer(nextConfig = {}) {
           throw new Error('Junoblocks not found')
         }
 
+        /* point to the junoblocks in every import */
         config.resolve.alias.junoblocks = __junoblocks_dir
 
-        const peerDependencies = Object.keys(
-          require(`${__junoblocks_dir}/package.json`).peerDependencies
+        /* take precedence of junoblocks packages first */
+        config.resolve.modules.unshift(__junoblocks_dir)
+        config.resolve.modules.unshift(
+          path.resolve(__junoblocks_dir, './node_modules')
         )
-
-        peerDependencies.forEach((dependencyName) => {
-          config.resolve.alias[dependencyName] = path.resolve(
-            __project_dir,
-            `./node_modules/${dependencyName}`
-          )
-        })
       } catch (err) {
         logBundlerError(err)
       }
