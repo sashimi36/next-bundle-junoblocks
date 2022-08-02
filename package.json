@@ -1,6 +1,6 @@
 {
   "name": "next-bundle-junoblocks",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Boostrap your Junoblocks development flow",
   "main": "index.js",
   "type": "commonjs",
